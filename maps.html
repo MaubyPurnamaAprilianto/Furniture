@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            transform-origin: bottom;
+        }
+
+        .nav-list li {
+            margin-right: 20px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .burger-menu {
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                transform: translateY(-150%);
+            }
+
+            .nav-list.show {
+                transform: translateY(0);
+            }
+
+            .nav-list li {
+                margin: 0;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .burger-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger-menu">&#9776;</div>
+    </nav>
+
+    <div class="content">
+        <!-- Your page content goes here -->
+        <h1>Welcome to Our Website</h1>
+        <p>This is a sample content.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navList = document.querySelector('.nav-list');
+
+            burgerMenu.addEventListener('click', function () {
+                navList.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

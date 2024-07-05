@@ -1,0 +1,908 @@
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "teko",sans-serif;
+}
+
+/*header*/
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100;
+    height: 80px;
+    padding: 0 20px;
+    background: #000;
+}
+
+header.sticky span {
+    color: #007BFF;
+}
+
+header.sticky {
+    height: 60px;
+    padding: 0 20px;
+    background: #000;
+    border-bottom: 3px solid #007BFF;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 0 0 20px ;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+
+header ul li a:active,
+header ul li a:hover {
+    color: #007BFF;
+}
+
+.menu-logo {
+    color: #fff;
+    font-size: 26px;
+}
+
+.menu-logo i {
+    margin-right: 30px;
+}
+
+/*end of header*/
+
+.search-container {
+    display: flex;
+  }
+  
+  .search-box {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+  }
+
+  .search-box:hover{
+    border: 4px solid #007BFF;
+  }
+  
+  .search-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 40px;
+  }
+
+  .search-button i{
+    font-size: 20px;
+    margin-left: px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+
+/*banner*/
+
+.container-banner{
+    width: 100%;
+}
+
+.wrapper-banner {
+    filter: brightness(40%);
+    width: 100%;
+    height: 118vh;
+    background-color: #0000005a;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 55px;
+    position: absolute;
+    top: 34%;
+    left: 16%;
+    color: #ffffff;
+}
+
+.banner-logo {
+    color: #007BFF;
+}
+
+.banner .btn-outline {
+    text-decoration: none;
+    color: #007BFF;
+    position: absolute;
+    top: 66%;
+    left: 42%;
+    padding: 20px 60px;
+    border: 2px solid #fff;
+    font-size: 20px;
+}
+
+.banner .btn-outline:hover{
+    background-color: #007BFF;
+    color: white;
+    transition: all 0.6s;
+}
+
+.container-banner-produk{
+    width: 100%;
+}
+
+.text-banner-produk h1{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 75px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: #007BFF;
+}
+
+.wrapper-banner-produk img{
+    filter: brightness(40%);
+    margin-top: 2.5rem;
+    background-color: #0000005a;
+}
+
+/* End of banner*/
+
+/*contant*/
+
+.contant {
+    width: 100%;
+    height: 200px;
+    background-color: #f6efe4;
+}
+
+.container-contant {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.contant-grid {
+    height: 120px;
+    margin: 35px 30px 35px 30px;
+    color: #555;
+}
+
+.contant-grid img {
+    float: left;
+    width: 120px;
+}
+
+.contant-grid h3 p{
+    float: left;
+}
+
+.contant-grid h3{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/*end of contant*/
+
+/*About us*/
+
+.container-about {
+    width: 100%;
+    display: flex;
+    padding: 2rem 0;
+}
+
+.text-about {
+    margin: 10rem 8rem 0 2rem;
+}
+
+.img-about img {
+    margin-left: 13rem;
+    border-radius: 30px;
+}
+
+.text-about h2{
+    font-size: 36px;
+}
+
+.text-about p{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.text-about ul{
+    padding: 20px 0 0 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.text-about ul li i{
+    color: #007BFF;
+    margin-right: 5px;
+}
+
+
+/*
+
+.container-about-slide {
+    width: 85vmin;
+    overflow: hidden;
+}
+
+.wrapper-about-slide{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.about img {
+    width: 100%;
+}
+*/
+/*end about us*/
+
+/*produk*/
+
+.container-produk{
+    width: 100%;
+    height: 120vh;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.container-produk h1{
+    padding-top: 2rem;
+    font-size: 46px;
+    color: #555;
+}
+
+.container-produk hr{
+    width: 6%;
+    height: 5px;
+    border: none;
+    background: #007BFF;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.produk-image{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image{
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 1rem 3rem 1rem;
+}
+
+.produk-image img{
+    width: 300px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produk-image p{
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 15px 10px;
+    color: #fff;
+    position: absolute;
+    top: 5.5rem; left: 7rem;
+}
+
+.image:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .2); /* Atur nilai alpha sesuai kebutuhan */
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
+}
+/*end of produk*/
+
+/*client*/
+
+.container-client{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    padding: 4rem 7rem;
+    background-color: #ffffff;
+}
+
+.wrapper-client{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.wrapper-client h1 {
+    font-size: 40px;
+    color: #555;
+}
+
+.wrapper-client hr{
+    width: 10%;
+    height: 5px;
+    border: none;
+    background: #007BFF;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.client-in {
+    align-items: center;
+}
+
+.client-in ul li{
+    list-style: none;
+}
+
+.client-in ul li img{
+    width: 100px;
+    margin: 5px 2rem;
+}
+
+/*end of client*/
+
+/*Testimonial*/
+.tokoMaps{
+    width: 100%;
+    height: 115vh;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.tokoMaps h1{
+    padding-top: 2.5rem;
+    font-size: 46px;
+}
+
+.container-tokoMaps{
+    margin: 0 2.5rem;
+    width: 85%;
+    height: 80vh;
+    background: url(../assest/image/Indonesia.webp);
+    background-size: cover;
+}
+
+.tokoMaps a{
+    background-color: #007BFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tokoMaps a:hover{
+    background-color: #0056b3;
+}
+
+/*footer*/
+
+footer {
+    border-top: 5px solid #007BFF;
+    margin-top: rem;
+    height: 250px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.text-footer-logo {
+    color: #007BFF;
+}
+
+.footer-menu ul {
+    display: flex;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.footer-menu ul li{
+    list-style: none;
+}
+
+.footer-menu ul li a{
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 2rem;
+}
+
+.footer-menu ul li a:hover{
+    color: #007BFF;
+}
+
+
+
+/*end of footer*/
+
+/*produkUs*/
+
+.container-produkUs{
+    width: 100%;
+    height: 180vh;
+    padding: 5rem;
+    background: whitesmoke;
+}
+
+.container-produkUs .bg-black{
+    padding: 24px 15px 16px 0;
+    margin-right: 8px;
+    background-color: #000;
+}
+
+.container-produkUs .bg-blue{
+    font-size: 30px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 0 30px 30px 0;
+}
+
+.produkUs-imagebanner{
+    margin-top: 2rem;
+}
+
+.produkUs-list {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bgbox-blue{
+    float: left;
+    background-color: #007BFF;
+    padding: 60px 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.produkUs-list img{
+    float: left;
+    background-color: whitesmoke;
+    width: 150px;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.produkUs-list img:hover{
+    filter: brightness(60%);
+    background-color: #0000005a;
+    cursor: pointer;
+    transition: all 2s ;
+}
+
+.container-produkUs ul{
+    margin-left: 13.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container-produkUs ul li{
+    list-style: none;
+    width: 150px;
+}
+/*produkUs*/
+
+/* Contact */
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2{
+    color: #555;
+    font-weight: 500;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.contact h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.contactUs hr{
+    width: 6%;
+    height: 5px;
+    border: none;
+    background: #007BFF;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+/* form */
+
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #0000005a;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #0000005a;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.inputBox input[type="submit"]:hover{
+    background: #0056b3;
+}
+
+.inputBox ::placeholder{
+    color: #999;
+}
+
+.info {
+    background: #fff;
+}
+
+.info h3 {
+    color: #000;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: #000;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+.sci li a:hover {
+    color: #0056b3;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* end of Contact */
+
+
+.cnotainer-banner-about {
+    width: 100%;
+}
+
+.wrapper-banner-about img{
+    filter: brightness(40%);
+    background-color: #0000005a;
+}
+
+.container-aboutUs {
+    margin-top: -7px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.image-aboutUs {
+    width: 50%;
+    height: 100%;
+    padding: 3em 3em 0 3em;
+}
+
+.text-aboutUs{
+    width: 50%;
+    height: 100%;
+    padding: 4em 3em 4em 3em;
+    background: #0056b3;
+    color: #fff;
+}
+
+.image-aboutUs h1{
+    font-size: 3em;
+}
+
+.image-aboutUs img{
+    margin-top: 5em;
+    width: 80%;
+    border: 5px solid #007BFF;
+    border-radius: 30px;
+}
+
+.text-aboutUs p {
+    font-size: 18px;
+}
+
+/* Team */
+.team-wrapper{
+    background: whitesmoke;
+    text-align: center;
+}
+
+.team-wrapper h4{
+    color: #0077b6;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.team-wrapper h1{
+    font-size: 50px;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.team-container{
+    display: flex;
+}
+
+.team-card{
+    height: 500px;
+    margin: 50px 10px 50px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card img{
+    width: 350px;
+    border-radius: 3px;
+}
+
+.team-intro{
+    height: 110px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 150px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+
+.team-intro h1{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.team-intro p{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.team-intro a{
+    color: white;
+    font-size: 30px;
+    margin: 0 30px 0 30px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.team-card:hover{
+    cursor: pointer;
+}
+
+.team-card:hover .team-intro{
+    height: 170px;
+    bottom: 150px;
+    background: #0077b6;
+    color: #fff;
+}
+
+.team-card:hover .team-intro a{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}
+
+.team-intro a:hover{
+    color: #000;
+    transition: .5s;
+}
+/* End of Team */
+
